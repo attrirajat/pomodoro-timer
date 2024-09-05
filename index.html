@@ -7,16 +7,24 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="container">
-      <div id="timer">
-        <div id="minutes">25</div>
-        <span>:</span>
-        <div id="seconds">00</div>
-      </div>
-      <div id="buttons">
-        <button id="startPauseButton" onclick="togglePomodoro()">Start</button>
+    <div class="wrapper">
+      <div id="container">
+        <button id="pomodoro" class="options">Pomodoro</button>
+        <button id="shortbreak" class="options">Short Break</button>
+        <button id="longbreak" class="options">Long Break</button>
+        <div id="timer">
+          <div id="minutes">25</div>
+          <span>:</span>
+          <div id="seconds">00</div>
+        </div>
+        <div id="buttons">
+          <button id="startPauseButton" onclick="togglePomodoro()">
+            Start
+          </button>
+        </div>
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>

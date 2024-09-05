@@ -33,6 +33,7 @@ function togglePomodoro() {
       }
       updateDisplay();
     }, 1000);
+    startPauseButton.innerHTML = "Pause";
   }
-  startPauseButton.innerHTML = "Pause";
+  isRunning = !isRunning;
 }
