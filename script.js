@@ -46,6 +46,7 @@ function updateDisplay() {
 function pomodoroMode() {
   resetPomodoro();
   document.body.style.background = "#9f4e4e";
+  startPauseButton.style.color = "#9f4e4e";
   minutes = 25;
   updateDisplay();
 }
@@ -53,6 +54,7 @@ function pomodoroMode() {
 function shortbreakMode() {
   resetPomodoro();
   document.body.style.background = "#418348";
+  startPauseButton.style.color = "#418348";
   minutes = 5;
   updateDisplay();
 }
@@ -60,6 +62,7 @@ function shortbreakMode() {
 function longbreakMode() {
   resetPomodoro();
   document.body.style.background = "#355c7d";
+  startPauseButton.style.color = "#355c7d";
   minutes = 15;
   updateDisplay();
 }
