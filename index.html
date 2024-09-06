@@ -9,9 +9,15 @@
   <body>
     <div class="wrapper">
       <div id="container">
-        <button id="pomodoro" class="options">Pomodoro</button>
-        <button id="shortbreak" class="options">Short Break</button>
-        <button id="longbreak" class="options">Long Break</button>
+        <button id="pomodoro" class="options" onclick="pomodoroMode()">
+          Pomodoro
+        </button>
+        <button id="shortbreak" class="options" onclick="shortbreakMode()">
+          Short Break
+        </button>
+        <button id="longbreak" class="options" onclick="longbreakMode()">
+          Long Break
+        </button>
         <div id="timer">
           <div id="minutes">25</div>
           <span>:</span>

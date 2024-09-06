@@ -8,6 +8,7 @@ body {
   margin: 5px;
   background-color: rgb(159, 78, 78);
   overflow-x: hidden;
+  transition: background-color 0.5s ease;
 }
 
 #timer {
