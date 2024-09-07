@@ -80,10 +80,14 @@ body {
     box-sizing: border-box;
     overflow: hidden;
   }
-
+  #container {
+    max-width: 100%;
+    width: 100%;
+  }
   button {
     font-size: 15px;
-    padding: 8px 20px;
-    max-width: 100%;
+    padding: 5px;
+    width: 100%;
+    max-width: 96%;
   }
 }
