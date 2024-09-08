@@ -44,6 +44,7 @@ function updateDisplay() {
 }
 
 function pomodoroMode() {
+  activateButton("pomodoro");
   resetPomodoro();
   document.body.style.background = "#9f4e4e";
   startPauseButton.style.color = "#9f4e4e";
@@ -52,6 +53,7 @@ function pomodoroMode() {
 }
 
 function shortbreakMode() {
+  activateButton("shortbreak");
   resetPomodoro();
   document.body.style.background = "#418348";
   startPauseButton.style.color = "#418348";
@@ -60,6 +62,7 @@ function shortbreakMode() {
 }
 
 function longbreakMode() {
+  activateButton("longbreak");
   resetPomodoro();
   document.body.style.background = "#355c7d";
   startPauseButton.style.color = "#355c7d";
@@ -74,6 +77,13 @@ function resetPomodoro() {
   isRunning = false;
   document.getElementById("startPauseButton").innerHTML = "Start";
   updateDisplay();
+}
+function activateButton(buttonId) {
+  const buttons = document.querySelectorAll(".options");
+  buttons.forEach((button) => button.classList.remove("active"));
+
+  const selectedButton = document.getElementById(buttonId);
+  selectedButton.classList.add("active");
 }
 
 updateDisplay();

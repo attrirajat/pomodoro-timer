@@ -49,11 +49,17 @@ body {
   font-family: ArialRounded;
   height: 30%;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0.15);
-  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.1);
   color: white;
   opacity: 1;
   font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.options.active {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border: 2px solid white;
 }
 
 #startPauseButton {
@@ -86,7 +92,7 @@ body {
   }
   button {
     font-size: 15px;
-    padding: 5px;
+    padding: 10px;
     width: 100%;
     max-width: 96%;
   }
