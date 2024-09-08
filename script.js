@@ -85,5 +85,5 @@ function activateButton(buttonId) {
   const selectedButton = document.getElementById(buttonId);
   selectedButton.classList.add("active");
 }
-
+activateButton("pomodoro");
 updateDisplay();
