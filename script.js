@@ -14,7 +14,7 @@ function togglePomodoro() {
       if (seconds === 0) {
         if (minutes === 0) {
           clearInterval(timerInterval);
-          alert("Pomodoro session completed! Take a break!");
+          onTimerEnd();
           return;
         } else {
           minutes -= 1;
@@ -85,5 +85,11 @@ function activateButton(buttonId) {
   const selectedButton = document.getElementById(buttonId);
   selectedButton.classList.add("active");
 }
+
+function onTimerEnd() {
+  document.getElementById("alarm-sound").play();
+  alert("Pomodoro session completed! Take a break!");
+}
+
 activateButton("pomodoro");
 updateDisplay();
